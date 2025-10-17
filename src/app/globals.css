@@ -107,7 +107,6 @@ html {
 .font-geist-mono {
   font-family: var(--font-geist-mono);
 }
-
 /* Hero Typography - Exact specifications */
 .hero-line-1-2 {
   font-family: var(--font-grotesk-inktrap);
@@ -176,4 +175,13 @@ html {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom dotted border */
+.dotted-border {
+  background-image: linear-gradient(to right, #4a4a4a 40%, transparent 0%);
+  background-position: top;
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+  height: 1px;
 }
