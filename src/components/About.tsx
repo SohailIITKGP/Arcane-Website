@@ -11,9 +11,9 @@ export default function About() {
     >
 
       {/* Content */}
-      <div className="relative px-8 z-10 py-20 md:py-32">
-        <div className="w-full mx-auto">
-          {/* Section Header - Positioned above the border line */}
+      <div className="relative z-10 py-20 md:py-32">
+        {/* Section Header */}
+        <div className="px-8">
           <div className="flex items-start gap-8 md:gap-40 mb-16 -mt-10">
             <span className="text-red-500 text-5xl md:text-6xl lg:text-7xl font-pp-mondwest">
               01
@@ -22,23 +22,41 @@ export default function About() {
               ABOUT
             </h2>
           </div>
+        </div>
 
-          {/* Border line will be visible from background image */}
+        {/* Border line will be visible from background image */}
 
-          {/* Main Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mt-48 ml-54">
+        <div className="mt-48">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-40 max-w-[75%] ml-auto">
             {/* Left Column - Main Description */} 
-            <div className="space-y-10 ">
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed uppercase tracking-wide">
+            <div className="flex-1 space-y-3">
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed uppercase tracking-wide font-grotesk-inktrap">
                 ARCANE WAS BUILT FOR THE FRONTRUNNER. WE DESIGN WITH THE SAME AMBITION AS THE PROJECTS WE SERVE: GLOBAL, TRUSTLESS, AND PERMISSIONLESS. WE EMBRACE THE INTERSECTION OF CLARITY AND MYSTIQUE — WHERE COMPLEX MECHANISMS BECOME SIMPLE, USABLE, AND BEAUTIFUL.
               </p>
             </div>
 
             {/* Right Column - Additional Info */}
-            <div className="space-y-10">
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed uppercase tracking-wide">
-                FROM DEFI EXCHANGES TO VALIDATOR NETWORKS, IMMUTABLE PRIMITIVES TO SMART CITY STACKS, WE ENGAGE WHERE THE BUILD STANDS AND BRAND RISE ABOVE.
+            <div className="flex-1 space-y-3">
+              {/* Goal Label */}
+              <p className="text-[#B73739] text-xs md:text-sm uppercase tracking-widest bg-[#B737391F] w-fit p-1 font-geist-mono">
+                GOAL
               </p>
+              
+              {/* Goal Description */}
+              <div className="space-y-1">
+                <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wider leading-relaxed font-geist-mono">
+                  FROM DEFI EXCHANGES TO VALIDATOR
+                </p>
+                <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wider leading-relaxed font-geist-mono">
+                  NETWORKS, IMMUTABLE PRIMITIVES TO
+                </p>
+                <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wider leading-relaxed font-geist-mono">
+                  ENTERPRISE, ARCANE DESIGNS PROJECTS AND
+                </p>
+                <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wider leading-relaxed font-geist-mono">
+                  BRANDS THAT EVOLVE.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -54,7 +72,7 @@ export default function About() {
       </div>
 
       {/* Bottom Fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-[2]" />
+      {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-[2]" /> */}
     </section>
   );
 }
