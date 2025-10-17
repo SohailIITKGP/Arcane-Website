@@ -29,7 +29,7 @@ export default function About() {
         <div className="mt-48">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-40 max-w-[75%] ml-auto">
             {/* Left Column - Main Description */} 
-            <div className="flex-1 space-y-3">
+            <div className="flex-1 space-y-10">
               <p className="text-gray-300 text-base md:text-lg leading-relaxed uppercase tracking-wide font-grotesk-inktrap">
                 ARCANE WAS BUILT FOR THE FRONTRUNNER. WE DESIGN WITH THE SAME AMBITION AS THE PROJECTS WE SERVE: GLOBAL, TRUSTLESS, AND PERMISSIONLESS. WE EMBRACE THE INTERSECTION OF CLARITY AND MYSTIQUE — WHERE COMPLEX MECHANISMS BECOME SIMPLE, USABLE, AND BEAUTIFUL.
               </p>
@@ -62,8 +62,8 @@ export default function About() {
         </div>
       </div>
 
-      {/* Bottom Text - Large Display with Marquee Animation */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 overflow-hidden bg-[#151515]">
+      {/* Bottom Text with Marquee Animation */}
+      <div className="relative z-10 overflow-hidden bg-[#151515] py-4 mt-12 mb-10">
         <div className="flex animate-marquee">
           {/* Duplicate text for seamless loop */}
           <h3 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#4F4E4D] opacity-50 uppercase tracking-tight leading-none whitespace-nowrap pr-8">
