@@ -10,9 +10,7 @@ export default function About() {
       }}
     >
 
-      {/* Content */}
       <div className="relative z-10 py-20 md:py-32">
-        {/* Section Header */}
         <div className="px-8">
           <div className="flex items-start gap-8 md:gap-40 mb-16 -mt-10">
             <span className="text-red-500 text-5xl md:text-6xl lg:text-7xl font-pp-mondwest">
@@ -24,25 +22,19 @@ export default function About() {
           </div>
         </div>
 
-        {/* Border line will be visible from background image */}
-
         <div className="mt-48">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-40 max-w-[75%] ml-auto">
-            {/* Left Column - Main Description */} 
             <div className="flex-1 space-y-10">
               <p className="text-gray-300 text-base md:text-lg leading-relaxed uppercase tracking-wide font-grotesk-inktrap">
                 ARCANE WAS BUILT FOR THE FRONTRUNNER. WE DESIGN WITH THE SAME AMBITION AS THE PROJECTS WE SERVE: GLOBAL, TRUSTLESS, AND PERMISSIONLESS. WE EMBRACE THE INTERSECTION OF CLARITY AND MYSTIQUE — WHERE COMPLEX MECHANISMS BECOME SIMPLE, USABLE, AND BEAUTIFUL.
               </p>
             </div>
 
-            {/* Right Column - Additional Info */}
             <div className="flex-1 space-y-3">
-              {/* Goal Label */}
               <p className="text-[#B73739] text-xs md:text-sm uppercase tracking-widest bg-[#B737391F] w-fit p-1 font-geist-mono">
                 GOAL
               </p>
               
-              {/* Goal Description */}
               <div className="space-y-1">
                 <p className="text-gray-500 text-xs md:text-sm uppercase tracking-wider leading-relaxed font-geist-mono">
                   FROM DEFI EXCHANGES TO VALIDATOR
@@ -62,10 +54,8 @@ export default function About() {
         </div>
       </div>
 
-      {/* Bottom Text with Marquee Animation */}
       <div className="relative z-10 overflow-hidden bg-[#151515] py-4 mt-12 mb-10">
         <div className="flex animate-marquee">
-          {/* Duplicate text for seamless loop */}
           <h3 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#4F4E4D] opacity-50 uppercase tracking-tight leading-none whitespace-nowrap pr-8">
             COMPLEXITY DISTILLED INTO HUMAN UNDERSTANDING
           </h3>
@@ -74,9 +64,6 @@ export default function About() {
           </h3>
         </div>
       </div>
-
-      {/* Bottom Fade */}
-      {/* <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent z-[2]" /> */}
     </section>
   );
 }
