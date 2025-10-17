@@ -1,4 +1,11 @@
 export default function Work() {
+  const projects = [
+    { number: "01", name: "Synthari", category: "Metaverse" },
+    { number: "01", name: "Edel", category: "Metaverse" },
+    { number: "01", name: "Innovate", category: "Web3" },
+    { number: "01", name: "DAAO", category: "Web3" },
+    { number: "01", name: "Inspire", category: "Web3" },
+  ];
 
   return (
     <section 
@@ -10,9 +17,8 @@ export default function Work() {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      {/* Content */}
+
       <div className="relative z-10 px-6 md:px-12 lg:px-20 py-20 md:py-32">
-        {/* Section Header */}
         <div className="mb-8">
           <div className="flex items-start gap-8 md:gap-16">
             <span className="text-red-500 text-5xl md:text-6xl lg:text-7xl font-pp-mondwest">
@@ -53,6 +59,62 @@ export default function Work() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+
+          <div className="space-y-0">
+            {projects.slice(0, 5).map((project, index) => (
+              <div key={index}>
+
+                <div className="flex items-center justify-between py-8 md:py-10 group cursor-pointer hover:bg-white/5 transition-colors px-4 md:px-6">
+                  <span className="text-gray-500 text-sm font-geist-mono">
+                    {project.number}
+                  </span>
+
+                  <h3 className="text-white text-xl md:text-2xl lg:text-3xl font-grotesk-inktrap tracking-wide flex-1 pl-6 md:pl-8">
+                    {project.name}
+                  </h3>
+
+                  <span className="text-gray-500 text-xs font-geist-mono uppercase tracking-wider mr-4 md:mr-6">
+                    {project.category}
+                  </span>
+
+                  <button className="w-8 h-8 border border-[#B73739] flex items-center justify-center">
+                    <span className="text-lg text-[#B73739]">+</span>
+                  </button>
+                </div>
+
+                <div className="dotted-border"></div>
+              </div>
+            ))}
+          </div>
+
+          <div className="space-y-0">
+            {projects.slice(0, 5).map((project, index) => (
+              <div key={index}>
+                <div className="flex items-center justify-between py-8 md:py-10 group cursor-pointer hover:bg-white/5 transition-colors px-4 md:px-6">
+                  <span className="text-gray-500 text-sm font-geist-mono">
+                    {project.number}
+                  </span>
+
+                  <h3 className="text-white text-xl md:text-2xl lg:text-3xl font-grotesk-inktrap tracking-wide flex-1 pl-6 md:pl-8">
+                    {project.name}
+                  </h3>
+
+                  <span className="text-gray-500 text-xs font-geist-mono uppercase tracking-wider mr-4 md:mr-6">
+                    {project.category}
+                  </span>
+
+                  <button className="w-8 h-8 border border-[#B73739] flex items-center justify-center">
+                    <span className="text-lg text-[#B73739]">+</span>
+                  </button>
+                </div>
+
+                <div className="dotted-border"></div>
+              </div>
+            ))}
           </div>
         </div>
 
