@@ -26,23 +26,19 @@ export default function About() {
           {/* Border line will be visible from background image */}
 
           {/* Main Content */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-2 mt-48">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mt-48 ml-54">
             {/* Left Column - Main Description */} 
-            <div className="space-y-10">
+            <div className="space-y-10 ">
               <p className="text-gray-300 text-base md:text-lg leading-relaxed uppercase tracking-wide">
                 ARCANE WAS BUILT FOR THE FRONTRUNNER. WE DESIGN WITH THE SAME AMBITION AS THE PROJECTS WE SERVE: GLOBAL, TRUSTLESS, AND PERMISSIONLESS. WE EMBRACE THE INTERSECTION OF CLARITY AND MYSTIQUE — WHERE COMPLEX MECHANISMS BECOME SIMPLE, USABLE, AND BEAUTIFUL.
               </p>
             </div>
 
             {/* Right Column - Additional Info */}
-            <div className="space-y-6">
-              <div className="text-gray-400 text-sm md:text-base space-y-2">
-                <p className="uppercase tracking-wider">FROM DEFI EXCHANGES TO VALIDATOR</p>
-                <p className="uppercase tracking-wider">NETWORKS, IMMUTABLE PRIMITIVES TO</p>
-                <p className="uppercase tracking-wider">SMART CITY STACKS, WE ENGAGE</p>
-                <p className="uppercase tracking-wider">WHERE THE BUILD STANDS AND</p>
-                <p className="uppercase tracking-wider">BRAND RISE ABOVE.</p>
-              </div>
+            <div className="space-y-10">
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed uppercase tracking-wide">
+                FROM DEFI EXCHANGES TO VALIDATOR NETWORKS, IMMUTABLE PRIMITIVES TO SMART CITY STACKS, WE ENGAGE WHERE THE BUILD STANDS AND BRAND RISE ABOVE.
+              </p>
             </div>
           </div>
         </div>
