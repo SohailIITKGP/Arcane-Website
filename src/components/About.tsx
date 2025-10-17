@@ -62,11 +62,15 @@ export default function About() {
         </div>
       </div>
 
-      {/* Bottom Text - Large Display */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 overflow-hidden">
-        <div className="px-6 md:px-12 lg:px-20 pb-8">
-          <h3 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-gray-800 opacity-50 uppercase tracking-tight leading-none whitespace-nowrap">
-            COMPLEXITY DISTILLED INTO HU
+      {/* Bottom Text - Large Display with Marquee Animation */}
+      <div className="absolute bottom-0 left-0 right-0 z-10 overflow-hidden bg-[#151515]">
+        <div className="flex animate-marquee">
+          {/* Duplicate text for seamless loop */}
+          <h3 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#4F4E4D] opacity-50 uppercase tracking-tight leading-none whitespace-nowrap pr-8">
+            COMPLEXITY DISTILLED INTO HUMAN UNDERSTANDING
+          </h3>
+          <h3 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#4F4E4D] opacity-50 uppercase tracking-tight leading-none whitespace-nowrap pr-8">
+            COMPLEXITY DISTILLED INTO HUMAN UNDERSTANDING
           </h3>
         </div>
       </div>
