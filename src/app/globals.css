@@ -97,15 +97,15 @@ html {
 
 /* Custom font classes */
 .font-pp-mondwest {
-  font-family: var(--font-pp-mondwest);
+  font-family: var(--font-pp-mondwest) !important;
 }
 
 .font-grotesk-inktrap {
-  font-family: var(--font-grotesk-inktrap);
+  font-family: var(--font-grotesk-inktrap) !important;
 }
 
 .font-geist-mono {
-  font-family: var(--font-geist-mono);
+  font-family: var(--font-geist-mono) !important;
 }
 /* Hero Typography - Exact specifications */
 .hero-line-1-2 {
