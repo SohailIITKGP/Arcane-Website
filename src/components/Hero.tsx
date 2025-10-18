@@ -20,7 +20,7 @@ export default function Hero() {
       <nav className="relative z-10 flex items-center justify-between px-6 md:px-12 lg:px-20 pt-6 md:pt-8">
         <div className="flex items-center">
           <Image
-            src="/Logos.png"
+            src="/Arcane logo.svg"
             alt="Arcane Labs"
             width={180}
             height={40}
