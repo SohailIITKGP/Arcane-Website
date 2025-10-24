@@ -104,10 +104,8 @@ export default function Hero() {
                         ✕
                     </button>
                     
-                    {/* Scrollable container */}
                     <div className="flex flex-col h-full overflow-y-auto">
                         <div className="flex flex-col min-h-full px-6 md:px-8 py-8 md:py-10">
-                            {/* Menu Items */}
                             <div className="flex flex-col space-y-6 mt-10 flex-shrink-0">
                                 {[
                                     { num: "01", text: "ABOUT", href: "#about" },
@@ -123,15 +121,25 @@ export default function Hero() {
                                             className="text-base md:text-lg font-medium tracking-wide hover:text-black transition-colors block py-2"
                                             onClick={toggleMenu}
                                         >
-                                            <span className="text-black/80 text-sm">{item.num}</span>
-                                            <span className="ml-8">{item.text}</span>
+                                            <span className="text-black/80 text-xl text-normal font-pp-mondwest">{item.num}</span>
+                                            <span className="ml-8 font-grotesk-inktrap">{item.text}</span>
                                         </a>
-                                        <div className="w-full border-b border-dashed border-black/40 mt-2" />
+                                        <svg className="w-full mt-2" height="2" style={{ overflow: 'visible' }}>
+                                            <line 
+                                                x1="0" 
+                                                y1="1" 
+                                                x2="100%" 
+                                                y2="1" 
+                                                stroke="#000000" 
+                                                strokeWidth="2" 
+                                                strokeDasharray="10 8"
+                                                strokeLinecap="square"
+                                            />
+                                        </svg>
                                     </div>
                                 ))}
                             </div>
 
-                            {/* Bottom Image - sticky to bottom with reduced top margin on mobile */}
                             <div className="flex items-center justify-center mt-8 md:mt-auto pt-4 md:pt-8 pb-4 flex-shrink-0">
                                 <Image
                                     src="/MenuImage.svg"
