@@ -92,45 +92,53 @@ export default function Hero() {
                     className={`
             absolute z-20 bg-[#b52d2d] text-white
             ${isClosing ? "animate-slide-out" : "animate-slide-in"}
-            /* Updated classes: Removed overflow-y-auto from mobile */
-            md:top-2 md:right-10 md:h-[calc(100%-1rem)] md:w-[25%] md:rounded-[10px] md:overflow-y-auto
+            md:top-2 md:right-10 md:h-[calc(100vh-1rem)] md:w-[320px] md:rounded-[10px] md:overflow-y-auto
             top-0 left-0 w-full h-full md:inset-auto
+            flex flex-col
         `}
                 >
                     <button
                         onClick={toggleMenu}
-                        className="absolute top-5 right-6 text-white text-3xl md:top-8 md:right-8"
+                        className="absolute top-4 right-5 text-white text-2xl hover:text-black transition-colors z-10"
                     >
-                        &times;
+                        ✕
                     </button>
-                    <div className="flex flex-col items-start space-y-4 text-white mt-10 md:mt-24 px-8 md:px-10">
-                        {[
-                            { num: "01", text: "ABOUT", href: "#about" },
-                            { num: "02", text: "SERVICES", href: "#services" },
-                            { num: "03", text: "WORK", href: "#work" },
-                            { num: "04", text: "CASE STUDIES", href: "#case-studies" },
-                            { num: "05", text: "IMPACT", href: "#impact" },
-                            { num: "06", "text": "CONTACT", href: "#contact" },
-                        ].map((item) => (
-                            <a
-                                key={item.num}
-                                href={item.href}
-                                className="text-lg sm:text-xl font-medium tracking-wider hover:text-black transition-colors"
-                                onClick={toggleMenu}
-                            >
-                                <span className="text-black pr-3">{item.num}</span> {item.text}
-                                <p className="text-black mt-1">-------------------------------</p>
-                            </a>
-                        ))}
-                    </div>
-                    <div className="flex items-center justify-center mt-3 mb-10">
-                        <Image
-                            src="/MenuImage.svg"
-                            alt="Menu Deco"
-                            width={180}
-                            height={180}
-                            className="w-36 sm:w-44"
-                        />
+                    
+                    <div className="flex flex-col justify-between h-full px-6 md:px-8 py-8 md:py-10">
+                        {/* Menu Items */}
+                        <div className="flex flex-col space-y-6 mt-10">
+                            {[
+                                { num: "01", text: "ABOUT", href: "#about" },
+                                { num: "02", text: "SERVICES", href: "#services" },
+                                { num: "03", text: "WORK", href: "#work" },
+                                { num: "04", text: "CASE STUDIES", href: "#case-studies" },
+                                { num: "05", text: "IMPACT", href: "#impact" },
+                                { num: "06", text: "CONTACT", href: "#contact" },
+                            ].map((item) => (
+                                <div key={item.num} className="w-full">
+                                    <a
+                                        href={item.href}
+                                        className="text-base md:text-lg font-medium tracking-wide hover:text-black transition-colors block py-2"
+                                        onClick={toggleMenu}
+                                    >
+                                        <span className="text-black/80 text-sm">{item.num}</span>
+                                        <span className="ml-8">{item.text}</span>
+                                    </a>
+                                    <div className="w-full border-b border-dashed border-black/40 mt-2" />
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Bottom Image */}
+                        <div className="flex items-center justify-center md:pt-8">
+                            <Image
+                                src="/MenuImage.svg"
+                                alt="Menu Deco"
+                                width={200}
+                                height={200}
+                                className="w-48 h-auto"
+                            />
+                        </div>
                     </div>
                 </div>
             )}
