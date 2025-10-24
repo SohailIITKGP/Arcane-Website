@@ -15,21 +15,21 @@ export default function Impact() {
   ];
 
   return (
-      <section className="relative w-full min-h-screen bg-[#080808] overflow-hidden py-10 lg:py-20">
-        <div className="relative z-10 px-4 md:px-12 lg:px-20">
-          <div className="mb-2">
-            <div className="flex items-start gap-4 md:gap-16">
+      <section className="relative w-full min-h-screen bg-[#080808] overflow-hidden pt-10 lg:pt-20">
+        <div className="relative z-10">
+          <div className="mb-2  px-4 md:px-12 lg:px-20">
+            <div className="flex items-start gap-4 md:gap-16 ">
               <span className="text-red-500 text-4xl md:text-6xl lg:text-7xl font-pp-mondwest">
               04
             </span>
-              <h2 className="text-white text-4xl md:text-6xl lg:text-7xl font-grotesk-inktrap tracking-wider pt-2 uppercase">
+              <h2 className="text-white text-4xl md:text-6xl lg:text-7xl font-grotesk-inktrap pt-2 uppercase">
                 IMPACT CREATED
               </h2>
             </div>
           </div>
 
           <div className="border-t border-[#313030] mt-10 lg:mt-20"></div>
-          <div className="space-y-0 mt-4 lg:mt-6">
+          <div className="space-y-0 mt-4 lg:mt-6  px-4 md:px-12 lg:px-20">
             {achievements.map((achievement, index) => (
                 <div key={index}>
                   <div className="py-6 md:py-10">
@@ -52,10 +52,10 @@ export default function Impact() {
               </h3>
             </div>
           </div>
-          <div className="mt-5 text-white flex flex-col justify-between p-4 sm:p-8">
+          <div className="mt-5 text-white flex flex-col justify-between pt-4 sm:pt-8">
             <div className="flex-grow flex items-center justify-center">
               <div className="w-full mx-auto">
-                <div className="text-left mb-8 sm:mb-16">
+                <div className="text-left mb-8 sm:mb-16 px-4 md:px-10 lg:px-9">
                   <h1 className="text-2xl sm:text-2xl md:text-5xl lg:text-6xl text-gray-400 leading-normal lg:leading-relaxed mt-10 lg:mt-[100px] mb-5 font-thin">
                     We love working alongside ambitious brands
                     <br className="hidden lg:inline-block"/>
@@ -64,7 +64,7 @@ export default function Impact() {
                     build something great together.
                   </h1>
                 </div>
-                <form className="w-full pt-5 mt-5">
+                <form className="w-full pt-5 mt-5 px-4 md:px-10 lg:px-9">
                   <div className="mb-6">
                     <label htmlFor="first-name" className="text-sm text-gray-500 font-geist-mono">First Name</label>
                     <input type="text" id="first-name"

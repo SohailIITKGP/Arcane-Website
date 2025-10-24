@@ -239,24 +239,19 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #FF0000;
 }
-
-/* Custom dotted border */
-.dotted-border {
-  background-image: linear-gradient(to right, #4a4a4a 40%, transparent 0%);
-  background-position: top;
-  background-size: 8px 1px;
-  background-repeat: repeat-x;
-  height: 1px;
-}
-
-.input-underscore {
-  border-style: hidden !important;
-  background-image: linear-gradient(to right, var(--foreground) 10px, transparent 0%);
-  background-position: bottom;
-  background-size: 13px 1px;
-  background-repeat: repeat-x;
-}
-
 .extended-height{
   height: 105% !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: rgba(255, 255, 255, 0) !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.37) inset !important;
+  box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.1) inset !important;
+  color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+  appearance: none !important;
+  -webkit-text-fill-color: white !important;
 }
