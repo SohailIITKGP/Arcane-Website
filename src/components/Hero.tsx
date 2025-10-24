@@ -36,15 +36,15 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative min-h-screen w-full overflow-hidden bg-[#0a0a0f]">
+        <section className="relative h-full w-full overflow-hidden bg-[#0a0a0f]">
             {/* Hero background */}
             <div className={`transition-filter duration-500 ${menuOpen ? "blur-sm" : ""}`}>
-                <div className="absolute inset-0 z-0">
+                <div className="absolute inset-1 z-0 overflow-y-auto">
                     <Image
                         src="/Landing.svg"
                         alt="Hero Background"
                         fill
-                        className="object-cover object-top md:object-center opacity-60 transition-all duration-500"
+                        className="fixed h-screen object-cover object-top md:object-center opacity-60 transition-all duration-500"
                         priority
                     />
                 </div>
