@@ -247,19 +247,15 @@ html {
   background-repeat: repeat-x;
   height: 1px;
 }
-/* Add this block to your globals.css */
-.input-underscore {
-  /* Hide the native border-b style to prevent conflicts */
-  border-style: hidden !important;
 
-  /* Use a linear gradient to draw the dashes */
+.input-underscore {
+  border-style: hidden !important;
   background-image: linear-gradient(to right, var(--foreground) 10px, transparent 0%);
   background-position: bottom;
-
-  /* KEY CHANGE:
-     12px is the full width (10px dash + 2px space)
-     1px is the height of the line
-  */
   background-size: 13px 1px;
   background-repeat: repeat-x;
+}
+
+.extended-height{
+  height: 105% !important;
 }

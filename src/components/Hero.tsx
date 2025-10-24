@@ -44,7 +44,7 @@ export default function Hero() {
                         src="/Landing.svg"
                         alt="Hero Background"
                         fill
-                        className="fixed h-screen object-cover object-top md:object-center opacity-60 transition-all duration-500"
+                        className="absolute h-screen object-cover object-top md:object-center opacity-60 transition-all duration-500"
                         priority
                     />
                 </div>
