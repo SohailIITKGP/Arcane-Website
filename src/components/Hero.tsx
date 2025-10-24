@@ -37,7 +37,6 @@ export default function Hero() {
 
     return (
         <section className="relative h-full w-full overflow-hidden bg-[#0a0a0f]">
-            {/* Hero background */}
             <div className={`transition-filter duration-500 ${menuOpen ? "blur-sm" : ""}`}>
                 <div className="absolute inset-1 z-0 overflow-y-auto">
                     <Image
@@ -72,8 +71,6 @@ export default function Hero() {
                         <img src="/Menu.png" alt="Menu" className="h-7 w-auto md:h-8" />
                     </button>
                 </nav>
-
-                {/* Hero text */}
                 <div className="relative z-10 flex flex-col justify-center min-h-[calc(100vh-100px)] px-6 md:px-12 lg:px-20">
                     <div className="max-w-[1400px] w-full">
                         <h1 className="text-white uppercase leading-tight">
@@ -91,7 +88,6 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Responsive Menu */}
             {menuOpen && (
                 <div
                     className={`
@@ -101,15 +97,12 @@ export default function Hero() {
             top-0 left-0 w-full h-full md:inset-auto
           `}
                 >
-                    {/* Close button */}
                     <button
                         onClick={toggleMenu}
                         className="absolute top-5 right-6 text-white text-3xl md:top-8 md:right-8"
                     >
                         &times;
                     </button>
-
-                    {/* Menu Items */}
                     <div className="flex flex-col items-start space-y-4 text-white mt-20 md:mt-24 px-8 md:px-10">
                         {[
                             { num: "01", text: "ABOUT", href: "#about" },
@@ -130,8 +123,6 @@ export default function Hero() {
                             </a>
                         ))}
                     </div>
-
-                    {/* Menu Bottom Image */}
                     <div className="flex items-center justify-center mt-3 mb-10">
                         <Image
                             src="/MenuImage.svg"
