@@ -36,23 +36,9 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative h-full w-full overflow-hidden bg-[#0a0a0f]">
-            {/* Hero background */}
+        <section className="relative min-h-screen w-full overflow-hidden bg-black">
             <div className={`transition-filter duration-500 ${menuOpen ? "blur-sm" : ""}`}>
-                <div className="absolute inset-1 z-0 overflow-y-auto">
-                    <Image
-                        src="/Landing.svg"
-                        alt="Hero Background"
-                        fill
-                        className="fixed h-screen object-cover object-top md:object-center opacity-60 transition-all duration-500"
-                        priority
-                    />
-                </div>
-
-                {/* Overlay layer */}
                 <div className="absolute inset-0 z-[1]" />
-
-                {/* Navbar */}
                 <nav className="relative z-10 flex items-center justify-between px-5 md:px-12 lg:px-20 pt-6 md:pt-8">
                     <div className="flex items-center">
                         <Image
@@ -72,18 +58,28 @@ export default function Hero() {
                         <img src="/Menu.png" alt="Menu" className="h-7 w-auto md:h-8" />
                     </button>
                 </nav>
-
-                {/* Hero text */}
-                <div className="relative z-10 flex flex-col justify-center min-h-[calc(100vh-100px)] px-6 md:px-12 lg:px-20">
+                <div
+                    className="relative z-10 flex flex-col justify-center min-h-[calc(100vh-100px)] px-6 md:px-12 lg:px-20">
+                    <div className="absolute inset-1 z-0 overflow-y-auto">
+                        <Image
+                            src="/Landing.svg"
+                            alt="Hero Background"
+                            fill
+                            className="absolute h-screen object-cover object-top md:object-center opacity-60 transition-all duration-500"
+                            priority
+                        />
+                    </div>
                     <div className="max-w-[1400px] w-full">
                         <h1 className="text-white uppercase leading-tight">
               <span className="block text-left font-grotesk-inktrap text-3xl sm:text-4xl md:text-6xl lg:text-7xl">
                 ARCANE BACKS
               </span>
-                            <span className="block text-right font-grotesk-inktrap text-3xl sm:text-4xl md:text-6xl lg:text-7xl">
+                            <span
+                                className="block text-right font-grotesk-inktrap text-3xl sm:text-4xl md:text-6xl lg:text-7xl">
                 YOUR FAVORITE
               </span>
-                            <span className="block text-red-500 text-left font-pp-mondwest text-3xl sm:text-4xl md:text-6xl lg:text-7xl mt-2">
+                            <span
+                                className="block text-red-500 text-left font-pp-mondwest text-3xl sm:text-4xl md:text-6xl lg:text-7xl mt-2">
                 CRYPTO PROJECTS
               </span>
                         </h1>
@@ -91,33 +87,30 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Responsive Menu */}
             {menuOpen && (
                 <div
                     className={`
-            absolute z-20 bg-[#b52d2d] text-white overflow-y-auto
+            absolute z-20 bg-[#b52d2d] text-white
             ${isClosing ? "animate-slide-out" : "animate-slide-in"}
-            md:top-2 md:right-10 md:h-[calc(100%-1rem)] md:w-[25%] md:rounded-[10px]
+            /* Updated classes: Removed overflow-y-auto from mobile */
+            md:top-2 md:right-10 md:h-[calc(100%-1rem)] md:w-[25%] md:rounded-[10px] md:overflow-y-auto
             top-0 left-0 w-full h-full md:inset-auto
-          `}
+        `}
                 >
-                    {/* Close button */}
                     <button
                         onClick={toggleMenu}
                         className="absolute top-5 right-6 text-white text-3xl md:top-8 md:right-8"
                     >
                         &times;
                     </button>
-
-                    {/* Menu Items */}
-                    <div className="flex flex-col items-start space-y-4 text-white mt-20 md:mt-24 px-8 md:px-10">
+                    <div className="flex flex-col items-start space-y-4 text-white mt-10 md:mt-24 px-8 md:px-10">
                         {[
                             { num: "01", text: "ABOUT", href: "#about" },
                             { num: "02", text: "SERVICES", href: "#services" },
                             { num: "03", text: "WORK", href: "#work" },
                             { num: "04", text: "CASE STUDIES", href: "#case-studies" },
                             { num: "05", text: "IMPACT", href: "#impact" },
-                            { num: "06", text: "CONTACT", href: "#contact" },
+                            { num: "06", "text": "CONTACT", href: "#contact" },
                         ].map((item) => (
                             <a
                                 key={item.num}
@@ -130,8 +123,6 @@ export default function Hero() {
                             </a>
                         ))}
                     </div>
-
-                    {/* Menu Bottom Image */}
                     <div className="flex items-center justify-center mt-3 mb-10">
                         <Image
                             src="/MenuImage.svg"
