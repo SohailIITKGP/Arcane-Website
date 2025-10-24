@@ -87,6 +87,34 @@ html {
   animation: marquee 15s linear infinite;
 }
 
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInFromRight 0.5s forwards;
+}
+
+.animate-slide-out {
+  animation: slideOutToRight 0.5s forwards;
+}
+
+
+
 /* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #a855f7, #ec4899, #3b82f6);
@@ -191,9 +219,47 @@ html {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-  width: 0;  
+  width: 0;
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: #FF0000;
+}
+
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+/* Custom dotted border */
+.dotted-border {
+  background-image: linear-gradient(to right, #4a4a4a 40%, transparent 0%);
+  background-position: top;
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+  height: 1px;
+}
+/* Add this block to your globals.css */
+.input-underscore {
+  /* Hide the native border-b style to prevent conflicts */
+  border-style: hidden !important;
+
+  /* Use a linear gradient to draw the dashes */
+  background-image: linear-gradient(to right, var(--foreground) 10px, transparent 0%);
+  background-position: bottom;
+
+  /* KEY CHANGE:
+     12px is the full width (10px dash + 2px space)
+     1px is the height of the line
+  */
+  background-size: 13px 1px;
+  background-repeat: repeat-x;
 }
