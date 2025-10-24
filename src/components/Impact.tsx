@@ -66,29 +66,74 @@ export default function Impact() {
                 </div>
                 <form className="w-full pt-5 mt-5 px-4 md:px-10 lg:px-9">
                   <div className="mb-6">
-                    <label htmlFor="first-name" className="text-sm text-gray-500 font-geist-mono">First Name</label>
-                    <input type="text" id="first-name"
-                           className="w-full bg-transparent py-2 focus:outline-none text-white border-b-0 input-underscore"/>
+                    <label htmlFor="first-name" className="text-sm text-gray-500 font-geist-mono block mb-1">First Name</label>
+                    <div className="relative">
+                      <input type="text" id="first-name" name="first-name"
+                             className="w-full bg-transparent py-2 focus:outline-none text-white border-none" 
+                             style={{ paddingBottom: '8px' }}/>
+                      <div className="absolute bottom-0 left-0 right-0 h-[1px] pointer-events-none"
+                           style={{
+                             backgroundImage: 'linear-gradient(to right, #4a4a4a 10px, transparent 0%)',
+                             backgroundSize: '13px 1px',
+                             backgroundRepeat: 'repeat-x'
+                           }}></div>
+                    </div>
                   </div>
                   <div className="mb-6">
-                    <label htmlFor="last-name" className="text-sm text-gray-500 font-geist-mono">Last Name</label>
-                    <input type="text" id="last-name"
-                           className="w-full bg-transparent py-2 focus:outline-none text-white border-b-0 input-underscore"/>
+                    <label htmlFor="last-name" className="text-sm text-gray-500 font-geist-mono block mb-1">Last Name</label>
+                    <div className="relative">
+                      <input type="text" id="last-name" name="last-name"
+                             className="w-full bg-transparent py-2 focus:outline-none text-white border-none"
+                             style={{ paddingBottom: '8px' }}/>
+                      <div className="absolute bottom-0 left-0 right-0 h-[1px] pointer-events-none"
+                           style={{
+                             backgroundImage: 'linear-gradient(to right, #4a4a4a 10px, transparent 0%)',
+                             backgroundSize: '13px 1px',
+                             backgroundRepeat: 'repeat-x'
+                           }}></div>
+                    </div>
                   </div>
                   <div className="mb-6">
-                    <label htmlFor="phone-number" className="text-sm text-gray-500 font-geist-mono">Phone Number</label>
-                    <input type="text" id="phone-number"
-                           className="w-full bg-transparent py-2 focus:outline-none text-white border-b-0 input-underscore"/>
+                    <label htmlFor="phone-number" className="text-sm text-gray-500 font-geist-mono block mb-1">Phone Number</label>
+                    <div className="relative">
+                      <input type="tel" id="phone-number" name="phone-number"
+                             className="w-full bg-transparent py-2 focus:outline-none text-white border-none"
+                             style={{ paddingBottom: '8px' }}/>
+                      <div className="absolute bottom-0 left-0 right-0 h-[1px] pointer-events-none"
+                           style={{
+                             backgroundImage: 'linear-gradient(to right, #4a4a4a 10px, transparent 0%)',
+                             backgroundSize: '13px 1px',
+                             backgroundRepeat: 'repeat-x'
+                           }}></div>
+                    </div>
                   </div>
                   <div className="mb-6">
-                    <label htmlFor="email" className="text-sm text-gray-500 font-geist-mono">Email</label>
-                    <input type="email" id="email"
-                           className="w-full bg-transparent py-2 focus:outline-none text-white border-b-0 input-underscore"/>
+                    <label htmlFor="email" className="text-sm text-gray-500 font-geist-mono block mb-1">Email</label>
+                    <div className="relative">
+                      <input type="email" id="email" name="email"
+                             className="w-full bg-transparent py-2 focus:outline-none text-white border-none"
+                             style={{ paddingBottom: '8px' }}/>
+                      <div className="absolute bottom-0 left-0 right-0 h-[1px] pointer-events-none"
+                           style={{
+                             backgroundImage: 'linear-gradient(to right, #4a4a4a 10px, transparent 0%)',
+                             backgroundSize: '13px 1px',
+                             backgroundRepeat: 'repeat-x'
+                           }}></div>
+                    </div>
                   </div>
                   <div className="mb-10">
-                    <label htmlFor="message" className="text-sm text-gray-500 font-geist-mono">Message</label>
-                    <input type="text" id="message"
-                           className="w-full bg-transparent py-2 focus:outline-none text-white border-b-0 input-underscore"/>
+                    <label htmlFor="message" className="text-sm text-gray-500 font-geist-mono block mb-1">Message</label>
+                    <div className="relative">
+                      <input type="text" id="message" name="message"
+                             className="w-full bg-transparent py-2 focus:outline-none text-white border-none"
+                             style={{ paddingBottom: '8px' }}/>
+                      <div className="absolute bottom-0 left-0 right-0 h-[1px] pointer-events-none"
+                           style={{
+                             backgroundImage: 'linear-gradient(to right, #4a4a4a 10px, transparent 0%)',
+                             backgroundSize: '13px 1px',
+                             backgroundRepeat: 'repeat-x'
+                           }}></div>
+                    </div>
                   </div>
                   <div className="text-center mt-8">
                     <button type="submit"

@@ -43,12 +43,10 @@ body {
   overflow-y: scroll;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom animations */
 @keyframes float {
   0%, 100% {
     transform: translateY(0px);
@@ -114,9 +112,6 @@ html {
   animation: slideOutToRight 0.5s forwards;
 }
 
-
-
-/* Gradient text */
 .gradient-text {
   background: linear-gradient(135deg, #a855f7, #ec4899, #3b82f6);
   background-clip: text;
@@ -124,7 +119,6 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-/* Custom font classes */
 .font-pp-mondwest {
   font-family: var(--font-pp-mondwest) !important;
 }
@@ -136,7 +130,7 @@ html {
 .font-geist-mono {
   font-family: var(--font-geist-mono) !important;
 }
-/* Hero Typography - Exact specifications */
+
 .hero-line-1-2 {
   font-family: var(--font-grotesk-inktrap);
   font-weight: 700;
@@ -153,7 +147,6 @@ html {
   letter-spacing: 0%;
 }
 
-/* Responsive hero typography */
 @media (max-width: 1536px) {
   .hero-line-1-2 {
     font-size: 96px;
@@ -199,14 +192,12 @@ html {
   }
 }
 
-/* Glass morphism effect */
 .glass {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Custom dotted border */
 .dotted-border {
   background-image: linear-gradient(to right, #4a4a4a 40%, transparent 0%);
   background-position: top;
@@ -227,27 +218,36 @@ html {
   background: #FF0000;
 }
 
-.input-underscore {
-  border-style: hidden !important;
-  background-image: linear-gradient(to right, var(--foreground) 10px, transparent 0%);
-  background-position: bottom;
-  background-size: 13px 1px;
-  background-repeat: repeat-x;
-}
-
 .extended-height{
   height: 105% !important;
+}
+
+.input-underscore {
+  border: none !important;
+  background-color: transparent !important;
+  background-image: linear-gradient(to right, #4a4a4a 10px, transparent 0%) !important;
+  background-position: bottom !important;
+  background-size: 13px 1px !important;
+  background-repeat: repeat-x !important;
+  padding-bottom: 8px !important;
+}
+
+.input-underscore:focus {
+  background-image: linear-gradient(to right, #ffffff 10px, transparent 0%) !important;
+  outline: none !important;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  background-color: rgba(8, 8, 8, 1) !important;
-  -webkit-box-shadow: 0 0 0px 1000px rgba(8, 8, 8, 1) inset !important;
-  box-shadow: 0 0 0px 1000px rgba(8, 8, 8, 1) inset !important;
-  color: white !important;
-  transition: background-color 5000s ease-in-out 0s;
-  appearance: none !important;
   -webkit-text-fill-color: white !important;
+  background-color: transparent !important;
+  background-clip: text, padding-box !important;
+  -webkit-background-clip: text, padding-box !important;
+  background-image: linear-gradient(to right, #4a4a4a 10px, transparent 0%) !important;
+  background-position: bottom !important;
+  background-size: 13px 1px !important;
+  background-repeat: repeat-x !important;
+  transition: background-color 5000s ease-in-out 0s !important;
 }
