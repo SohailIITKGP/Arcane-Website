@@ -22,7 +22,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-10 lg:mt-48">
+          <div className="mt-10 lg:mt-35">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-40 px-4 md:px-8 lg:px-20 lg:max-w-7xl lg:mx-auto">
               <div className="flex-1 space-y-8 lg:space-y-10">
                 <p className="text-gray-300 text-sm md:text-lg leading-relaxed uppercase tracking-wide">

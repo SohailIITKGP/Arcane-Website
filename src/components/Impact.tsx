@@ -142,6 +142,7 @@ export default function Impact() {
                             bg-no-repeat bg-center
                             /* Added custom utility for button size, ensure this is defined in your tailwind.config.js or use standard sizing */
                             bg-size-[159.15px_52px]
+                            transition-all duration-500 ease-in-out
                             hover:bg-none
                             hover:bg-[#b73739]
                             relative px-10 py-3 text-lg font-semibold tracking-widest text-white

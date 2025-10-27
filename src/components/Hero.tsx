@@ -51,11 +51,27 @@ export default function Hero() {
                         />
                     </div>
 
-                    <button
-                        className="flex items-center gap-3 text-white/90 hover:text-white transition-colors text-sm font-medium tracking-wider"
-                        onClick={toggleMenu}
+                    {/*<button*/}
+                    {/*    className="flex items-center gap-3 text-white/90 hover:text-white transition-colors text-sm font-medium tracking-wider"*/}
+                    {/*    onClick={toggleMenu}*/}
+                    {/*>*/}
+                    {/*    <img src="/Menu.png" alt="Menu" className="h-7 w-auto md:h-8" />*/}
+                    {/*</button>*/}
+                    <button type="submit"
+                            onClick={toggleMenu}
+                            className="
+                            bg-[url('../../public/websubmitbutton.svg')]
+                            bg-no-repeat bg-center
+                            /* Added custom utility for button size, ensure this is defined in your tailwind.config.js or use standard sizing */
+                            bg-size-[125.15px_60px]
+                            transition-all duration-500 ease-in-out
+                            hover:bg-none
+                            hover:bg-[#b73739]
+                            relative px-10 py-3 text-lg font-normal tracking-widest text-white rounded-[2px]
+                          "
                     >
-                        <img src="/Menu.png" alt="Menu" className="h-7 w-auto md:h-8" />
+                        <span></span>
+                        MENU
                     </button>
                 </nav>
                 <div
