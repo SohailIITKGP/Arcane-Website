@@ -17,7 +17,7 @@ export default function Impact() {
   return (
       <section className="relative w-full min-h-screen bg-[#080808] overflow-hidden pt-10 lg:pt-20">
         <div className="relative z-10">
-          <div className="mb-2  px-4 md:px-12 lg:px-20">
+          <div className="mb-2  px-4 md:px-10 lg:px-20">
             <div className="flex items-center items-start gap-4 md:gap-16 ">
               <span className="text-red-500 text-4xl md:text-6xl lg:text-7xl font-pp-mondwest pt-4">
               04
@@ -140,7 +140,6 @@ export default function Impact() {
                             className="
                             bg-[url('../../public/websubmitbutton.svg')]
                             bg-no-repeat bg-center
-                            /* Added custom utility for button size, ensure this is defined in your tailwind.config.js or use standard sizing */
                             bg-size-[159.15px_52px]
                             transition-all duration-500 ease-in-out
                             hover:bg-none

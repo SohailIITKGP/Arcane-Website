@@ -11,7 +11,7 @@ export default function About() {
       >
 
         <div className="relative z-10 py-10 md:py-20 lg:py-32">
-          <div className="px-4 md:px-8 lg:px-20">
+          <div className="px-4 md:px-10 lg:px-20">
             <div className="flex items-start gap-4 md:gap-40 mb-10 lg:mb-16 mt-0">
               <span className="text-red-500 text-4xl md:text-6xl lg:text-7xl font-pp-mondwest">
               01
