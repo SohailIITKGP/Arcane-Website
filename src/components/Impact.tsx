@@ -18,8 +18,8 @@ export default function Impact() {
       <section className="relative w-full min-h-screen bg-[#080808] overflow-hidden pt-10 lg:pt-20">
         <div className="relative z-10">
           <div className="mb-2  px-4 md:px-12 lg:px-20">
-            <div className="flex items-start gap-4 md:gap-16 ">
-              <span className="text-red-500 text-4xl md:text-6xl lg:text-7xl font-pp-mondwest">
+            <div className="flex items-center items-start gap-4 md:gap-16 ">
+              <span className="text-red-500 text-4xl md:text-6xl lg:text-7xl font-pp-mondwest pt-4">
               04
             </span>
               <h2 className="text-white text-4xl md:text-6xl lg:text-7xl font-grotesk-inktrap pt-2 uppercase">
@@ -33,7 +33,7 @@ export default function Impact() {
             {achievements.map((achievement, index) => (
                 <div key={index}>
                   <div className="py-6 md:py-10">
-                    <p className="text-white text-base lg:text-xl leading-relaxed font-grotesk-inktrap">
+                    <p className="text-white text-base lg:text-xl leading-relaxed font-grotesk-inktrap font-extralight">
                       {achievement.text}
                     </p>
                   </div>
@@ -44,10 +44,10 @@ export default function Impact() {
           </div>
           <div className="relative z-10 overflow-hidden bg-[#B7373914] py-4 mt-8 lg:mt-12 mb-8 lg:mb-10">
             <div className="flex animate-marquee">
-              <h3 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-[#B73739] uppercase tracking-tight leading-none whitespace-nowrap font-grotesk-inktrap pr-8">
+              <h3 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-[#B73739] uppercase tracking-tight leading-none whitespace-nowrap font-pp-mondwest pr-8">
                 COMPLEXITY DISTILLED INTO HUMAN UNDERSTANDING
               </h3>
-              <h3 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-[#B73739] uppercase tracking-tight leading-none whitespace-nowrap font-grotesk-inktrap pr-8">
+              <h3 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-[#B73739] uppercase tracking-tight leading-none whitespace-nowrap font-pp-mondwest pr-8">
                 COMPLEXITY DISTILLED INTO HUMAN UNDERSTANDING
               </h3>
             </div>

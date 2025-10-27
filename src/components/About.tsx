@@ -25,7 +25,7 @@ export default function About() {
           <div className="mt-10 lg:mt-48">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-40 px-4 md:px-8 lg:px-20 lg:max-w-7xl lg:mx-auto">
               <div className="flex-1 space-y-8 lg:space-y-10">
-                <p className="text-gray-300 text-sm md:text-lg leading-relaxed uppercase tracking-wide font-grotesk-inktrap">
+                <p className="text-gray-300 text-sm md:text-lg leading-relaxed uppercase tracking-wide">
                   ARCANE WAS BUILT FOR THE FRONTRUNNER. WE DESIGN WITH THE SAME AMBITION AS THE PROJECTS WE SERVE: GLOBAL, TRUSTLESS, AND PERMISSIONLESS. WE EMBRACE THE INTERSECTION OF CLARITY AND MYSTIQUE — WHERE COMPLEX MECHANISMS BECOME SIMPLE, USABLE, AND BEAUTIFUL.
                 </p>
               </div>
@@ -56,10 +56,10 @@ export default function About() {
         </div>
         <div className="relative z-10 overflow-hidden bg-[#151515] py-4 mt-12 mb-0 lg:mb-10">
           <div className="flex animate-marquee">
-            <h3 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#4F4E4D] opacity-50 uppercase tracking-tight leading-none whitespace-nowrap pr-8">
+            <h3 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#4F4E4D] opacity-50 uppercase tracking-tight leading-none whitespace-nowrap pr-8 font-pp-mondwest font-normal">
               COMPLEXITY DISTILLED INTO HUMAN UNDERSTANDING
             </h3>
-            <h3 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#4F4E4D] opacity-50 uppercase tracking-tight leading-none whitespace-nowrap pr-8">
+            <h3 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-[#4F4E4D] opacity-50 uppercase tracking-tight leading-none whitespace-nowrap pr-8  font-pp-mondwest font-normal">
               COMPLEXITY DISTILLED INTO HUMAN UNDERSTANDING
             </h3>
           </div>
