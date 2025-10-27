@@ -67,12 +67,12 @@ export default function Services() {
                     {service.number}
                   </span>
                     </div>
-                    <div className="col-span-full lg:col-span-3 order-1 lg:order-2">
-                      <h3 className="text-white text-xl md:text-3xl lg:text-4xl font-grotesk-inktrap tracking-wide">
+                    <div className="col-span-full lg:col-span-4 order-1 lg:order-2">
+                      <h3 className="text-white text-xl md:text-3xl lg:text-3xl font-grotesk-inktrap tracking-wide">
                         {service.title}
                       </h3>
                     </div>
-                    <div className="col-span-full lg:col-span-7 lg:col-start-6 lg:ml-8 order-3">
+                    <div className="col-span-full lg:col-span-6 lg:col-start-6 lg:ml-8 order-3">
                       <p className="text-gray-400 text-sm leading-relaxed font-geist-mono">
                         {service.description}
                       </p>

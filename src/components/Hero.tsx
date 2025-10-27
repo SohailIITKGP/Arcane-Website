@@ -51,15 +51,25 @@ export default function Hero() {
                         />
                     </div>
 
-                    <button
-                        className="flex items-center gap-3 text-white/90 hover:text-white transition-colors text-sm font-medium tracking-wider"
-                        onClick={toggleMenu}
+
+                    <button type="submit"
+                            onClick={toggleMenu}
+                            className="
+                            bg-[url('../../public/websubmitbutton.svg')]
+                            bg-no-repeat bg-center
+                            bg-size-[125.15px_60px]
+                            transition-all duration-500 ease-in-out
+                            hover:bg-none
+                            hover:bg-[#b73739]
+                            relative px-10 py-3 text-lg font-normal tracking-widest text-white rounded-[2px]
+                          "
                     >
-                        <img src="/Menu.png" alt="Menu" className="h-7 w-auto md:h-8" />
+                        <span></span>
+                        MENU
                     </button>
                 </nav>
                 <div
-                    className="relative z-10 flex flex-col justify-center min-h-[calc(100vh-100px)] px-6 md:px-12 lg:px-20">
+                    className="relative z-10 flex flex-col justify-center min-h-[calc(100vh-100px)] px-5 md:px-7 lg:px-7">
                     <div className="absolute inset-1 z-0 overflow-y-auto">
                         <Image
                             src="/Landing.svg"
@@ -71,15 +81,15 @@ export default function Hero() {
                     </div>
                     <div className="max-w-[1400px] w-full">
                         <h1 className="text-white uppercase leading-tight">
-              <span className="block text-left font-grotesk-inktrap text-3xl sm:text-4xl md:text-6xl lg:text-7xl">
+              <span className="block text-left font-grotesk-inktrap text-3xl sm:text-4xl md:text-6xl lg:text-8xl">
                 ARCANE BACKS
               </span>
                             <span
-                                className="block text-right font-grotesk-inktrap text-3xl sm:text-4xl md:text-6xl lg:text-7xl">
+                                className="block text-right font-grotesk-inktrap text-3xl sm:text-4xl md:text-6xl lg:text-8xl">
                 YOUR FAVORITE
               </span>
                             <span
-                                className="block text-red-500 text-left font-pp-mondwest text-3xl sm:text-4xl md:text-6xl lg:text-7xl mt-2">
+                                className="block text-red-500 text-left font-pp-mondwest text-3xl sm:text-4xl md:text-6xl lg:text-9xl mt-2">
                 CRYPTO PROJECTS
               </span>
                         </h1>
